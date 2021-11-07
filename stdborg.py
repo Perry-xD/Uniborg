@@ -5,7 +5,9 @@
 import logging
 
 from uniborg import Uniborg
-import api_key
+import os
+api_key_id = os.environ['API_ID']
+api_key_hash = os.environ['API_HASH']
 
 logging.basicConfig(level=logging.INFO)
 
@@ -13,8 +15,8 @@ borg = Uniborg(
     "stdborg",
     plugin_path="stdplugins",
     connection_retries=None,
-    api_id=api_key.id,
-    api_hash=api_key.hash
+    api_id=api_key_id,
+    api_hash=api_key_hash
 )
 
 borg.run_until_disconnected()
