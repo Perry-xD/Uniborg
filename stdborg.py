@@ -5,14 +5,16 @@
 import logging
 
 from uniborg import Uniborg
+
 import os
 api_key_id = os.environ['API_ID']
 api_key_hash = os.environ['API_HASH']
+SESSION = os.environ['STRING_SESSION']
 
 logging.basicConfig(level=logging.INFO)
 
 borg = Uniborg(
-    "stdborg",
+    StringSession(SESSION),
     plugin_path="stdplugins",
     connection_retries=None,
     api_id=api_key_id,
