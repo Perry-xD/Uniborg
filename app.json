@@ -1,0 +1,34 @@
+{                
+  "name": "UserBot",
+  "description": "The best userbot made by Tilak Sharma",  
+  "logo": "",
+    "keywords": [
+    "telegram",
+    "userbot",
+    "plugin",
+    "modular",
+    "productivity"
+  ],
+  "repository": "https://github.com/perry-xd/uniborg/",
+  "website": "https://github.com/perry-xd/uniborg/",
+  "success_url": "#TODO",
+  "env": {
+    "API_ID": {
+      "description": "Get this value from my.telegram.org! Putting Others Value may result In Account Ban.",
+      "value": ""
+    },
+    "STRING_SESSION" {
+      "description": "String Session",
+      "value": ""
+    },
+    "API_HASH": {
+      "description": "Get this value from my.telegram.org! Putting Others Value May result In Account Ban.",
+      "value": ""
+    }
+  },
+  "buildpacks": [
+      {
+          "url": "heroku/python"
+      }
+  ]
+}
